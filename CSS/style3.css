@@ -1,0 +1,23 @@
+/* class -> .class {} */
+/* id -> #id_bilgisi {} */
+
+p {
+    font-size:20px;
+}
+
+h2, h3{
+    color:orange;
+    font-size:40px;
+}
+
+#second-article {
+    color:green;
+}
+
+.text-red {
+    color:red;
+}
+
+.fs-10 {
+    font-size:14px;
+}

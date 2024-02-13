@@ -1,0 +1,16 @@
+body {
+    background-color:rgb(190, 235, 248);
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+h1 {
+    color:red;
+    font-size:40px;
+    /*text-transform: uppercase;*/
+    background-color: rgb(103, 206, 235);
+}
+p {
+    color:orange;
+    font-size:20px;
+}
+/* css'teki açıklama kısımları böyledir */
