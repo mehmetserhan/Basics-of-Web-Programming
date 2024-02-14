@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(230, 231, 230);
+}
+
+.tema {
+    background-color: rgb(212, 137, 75);
+    color: white;
+}
+
+.accordion-button.collapsed {
+    background: rgb(212, 137, 75);
+    color:white;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-caption {
+    background-color: rgba(128, 128, 128, 0.397);
+    border-radius: 10px;
+}
+
+a {
+    color:white;
+}
+
+.page-item a {
+    color:black;
+    background-color: rgba(212, 137, 75, 0.39);
+}
