@@ -1,5 +1,4 @@
-// LocalStorage Kullanımı
-// >> Application >> Local Storage kısmında key-value çiftleri görülebilir
+// >> Application >> Local Storage
 localStorage.setItem("09", "Aydın")
 localStorage.setItem("35", "İzmir")
 localStorage.setItem("55", "Samsun")
@@ -17,15 +16,15 @@ localStorage.removeItem("09")
 localStorage.removeItem("35")
 localStorage.removeItem("55")
 
-
-/*  JSON - Stringfy ve Parse Kullanımı. 
-    Object olan veriyi string olarak kaydetmek için JSON.stringfy
-    String olan veriyi tekrar object olarak dönüştürmek için JSON.parse kullanılır */
-let user = {username: "mserhant", isActive: true}
-localStorage.setItem("userInfo", JSON.stringify(user))      // object halinde olan user verisini stringfy edip, localstorage'a userInfo olarak set et
+/*  JSON - Stringfy and Parse
+    Stringfy -> From object to string. JSON.stringfy
+    Parse -> From string to object. JSON.parse 
+*/
+let user = {username: "serhan", isActive: true}
+localStorage.setItem("userInfo", JSON.stringify(user))
 console.log(`${localStorage.getItem("userInfo")}`)
 
-user = JSON.parse(localStorage.getItem("userInfo"))         // string halineki userInfo verisini al, parse ile object'e geri dönüştür
-console.log(`Username: ${user.username} -> Is active?: ${user.isActive}`)
+let user2 = JSON.parse(localStorage.getItem("userInfo"))
+console.log(`Username: ${user2.username} -> Is active?: ${user2.isActive}`)
 
-localStorage.removeItem("userInfo")                     // bilgisayar hafızasında yer kaplamasın diye siliyorum
+localStorage.removeItem("userInfo")

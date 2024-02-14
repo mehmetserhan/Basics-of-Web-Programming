@@ -1,9 +1,9 @@
-// FOREACH KULLANIMI
+// FOREACH
 
-let TECH = ["Laptop", "Telefon", "Masaüstü", "Tablet", "Kulaklık", "Mouse"]
+let TECH = ["Laptop", "Phone", "Desktop", "Tablet", "Headphones", "Mouse"]
 TECH.forEach( (param) => console.log(`Item: ${param}`) )
 
-TECH.forEach( (param, index, array) => {array[index] = `${param.toUpperCase()}`} )  // forEach, ana array'in üzerinde KALICI değişiklikler yapar
+TECH.forEach( (param, index, array) => {array[index] = `${param.toUpperCase()}`} )  // be careful, it is permanent
 console.log(TECH)
 
 let ulDOM = document.querySelector("#list")

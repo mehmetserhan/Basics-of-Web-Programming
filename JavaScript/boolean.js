@@ -1,4 +1,3 @@
-// Boolean Sabit Tanımlı Değerleri
 let num = "15"
 console.log(num)
 num = Number(num)

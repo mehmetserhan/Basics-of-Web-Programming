@@ -1,5 +1,5 @@
-// JSON dosyasından veri çekmek
-fetch("json1.JSON").then(
+// fetch info from JSON
+fetch("json.JSON").then(
     response => {
         return response.json()
     }
@@ -12,8 +12,7 @@ fetch("json1.JSON").then(
     }
 )
 
-
-// API üzerinden veri çekmek
+// fetch info from API
 fetch("https://jsonplaceholder.typicode.com/posts").then(
     response2 => {
         return response2.json()

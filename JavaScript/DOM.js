@@ -4,7 +4,7 @@ console.log(document.location.hostname)
 console.log(document.body)
 console.log("------------------------------------------------------------------")
 
-// CSS manupulation by using DOM
+// CSS manipulation by using DOM
 document.body.style.backgroundColor = "#ffcccc"
 
 // adding class info to CSS by using DOM

@@ -1,32 +1,58 @@
-// ARRAYS
 let array1 = [1, 2, 3, 4, 5]
 console.log(array1)
-let array2 = [true, array1, "Ali"]
+let array2 = [true, array1, "Josh"]
 console.log(array2)
 
-
-// ELEMAN BULMA
-// ilk eleman ve son elemanı bulmak
-let sehir = ["İstanbul", "İzmir", "Ankara", "Antalya"]
-console.log(sehir)
-console.log(`İlk: ${sehir[0]} - Son: ${sehir[sehir.length-1]}` )
-// ortadaki elemanı bulmak
-if(sehir.length % 2 == 1){
-    console.log(`Orta eleman: ${sehir[(sehir.length-1)/2]}`)                                // element sayısı tekse
+// Finding a wanted item
+// finding the first and last ones
+let city = ["İstanbul", "İzmir", "Ankara", "Antalya"]
+console.log(city)
+console.log(`First: ${city[0]} - last: ${city[city.length-1]}` )
+// finding the middle one
+if(city.length % 2 == 1){
+    console.log(`Middle: ${city[(city.length-1)/2]}`)                                   // when array length is odd
 }
 else{
-    console.log(`Orta eleman: ${sehir[sehir.length/2 - 1]} ve ${sehir[sehir.length/2]}`)    // element sayısı çiftse
+    console.log(`Middle: ${city[city.length/2 - 1]} and ${city[city.length/2]}`)        // when array length is even
 }
 
+// Adding an item
+city = city.toSpliced(3, 0, "Aydin");                           // somehwere -> toSpliced(index, 0, element) -> 0 means don't delete any items
+city.unshift("Mugla")                                           // to its head
+city.push("Yalova")                                             // to its rear
+console.log(city)
 
-// ELEMAN EKLEME
-sehir = sehir.toSpliced(3, 0, "Aydin");     // herhangi bir yere -> toSpliced(index, 0, element) -> 0 means don't delete any items
-sehir.unshift("Mugla")                      // başa
-sehir.push("Yalova")                        // sona
-console.log(sehir)
+// Removing an item
+city.shift()         // from its head 
+city.pop()           // from its rear
+console.log(city)
 
+/***************************************************************************************************/
 
-// ELEMAN CIKARMA
-sehir.shift()         // baştan               // pop'lanan ve shift'lenen değerler tutulabilir. 
-sehir.pop()           // sondan               // let item = array.pop() yapılınca atılan son elemanı item'da tutmuş oluruz
-console.log(sehir)
+let nums = [5, 10, 15, 20, 25]
+let people = ["Ali", "Ayse", "Fatma"]
+
+// matrix
+let arr = [nums, people]
+console.log(arr[0][3])
+
+// splice method changes the array PERMANENTLY !!!
+let newArr = nums.splice(1, 2) // from the 1. index, take 2 items
+console.log(newArr)
+
+// finding the index of a specific item
+console.log(nums.indexOf(25))
+
+// copying arrays
+// DO NOT use something like let arr2 = arr1. it is dangerous because changing a copied array affects the original one
+// slice -> "oldfashioned"
+let newPeople = people.slice()
+newPeople.pop()
+console.log(people)
+console.log(newPeople)
+
+// ES6 -> preffered way  [...array_name]
+let newPeople2 = [...people]
+newPeople2.pop()
+console.log(people)
+console.log(newPeople2)

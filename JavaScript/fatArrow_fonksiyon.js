@@ -1,11 +1,11 @@
-// normal fonksiyon
+// normal function
 function hello(name){
-    console.log(`Merhaba ${name}`)
+    console.log(`Hello ${name}`)
 }
 hello("Ali")
 
-// fat arrow fonksiyon
+// fat arrow function
 const helloFunc = (name) => {
-    console.log(`Merhaba ${name}`)
+    console.log(`Hello ${name}`)
 }
 helloFunc("Ayse")

@@ -1,5 +1,5 @@
-// FILTER
-// verilen array'de istenilen koşulları sağlayan tüm elemanları bulur
+// FILTER and FOREACH
+// finds all elements in the given array that meet the desired conditions
 let customers = [
     {fullName: "Ali Veli", isActive: true}, 
     {fullName: "Ayse Yildiz", isActive: true},
@@ -13,7 +13,7 @@ activeUsers.forEach( item => console.log(item.fullName) )
 
 
 // MAP
-// The forEach() method does not return a new array, whereas the map() method returns a new array.
+// the forEach() method does not return a new array, whereas the map() method returns a new array
 let users = ["Ali", "Ayse", "Can", "Fatma", "Zafer"]
 let newUsers = users.map( item => 
     {   
@@ -21,8 +21,5 @@ let newUsers = users.map( item =>
     }
 )
 console.log(newUsers)
-/*  az önceki örnekteki gibi obje döndürürken
-    let newUsers = users.map( item => ( {userName: item, privateName: `${item[0]}..`, newName: `${item} ${item[0]}.`}) )
 
-    şekilde de kullanılabilir
-*/
+//let newUsers = users.map( item => ( {userName: item, privateName: `${item[0]}..`, newName: `${item} ${item[0]}.`}) )

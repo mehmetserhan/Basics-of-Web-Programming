@@ -1,8 +1,7 @@
-// input içerisinden değer almak
+// getting input
 let form = document.querySelector("#userForm")
 form.addEventListener("submit", formSubmit)
 
-// form'da göndere basıldığında sayfayı YENİLEME (get işlemini iptal et)
 function formSubmit(event){
     event.preventDefault()
 
@@ -13,18 +12,18 @@ function formSubmit(event){
         reset(userName, password)
     }
     else{
-        alert(`Düzgün veri girişi yapınız !!!`)
+        alert(`Invalid input !!!`)
         reset(userName, password)
     }
     
 }
 
 function register(uN, pW){
-    console.log(`Kullanici adi: ${uN}`)
-    console.log(`Sifre: ${pW}`)
+    console.log(`Username: ${uN}`)
+    console.log(`Password: ${pW}`)
     localStorage.setItem("userName", uN)
     localStorage.setItem("password", pW)
-    console.log("Kayit islemi gerceklesti")
+    console.log("Registration is done.")
 }
 
 function reset(userName, password){
